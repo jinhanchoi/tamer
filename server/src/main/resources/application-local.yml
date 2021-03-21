@@ -1,0 +1,14 @@
+profile: local
+
+server:
+  port: 8081
+
+info:
+  name: ${spring.application.name}
+  description: Tamer
+  enviroment: ${spring.profiles.active}
+  version: 0.0.1
+
+logging:
+  level:
+    root: debug

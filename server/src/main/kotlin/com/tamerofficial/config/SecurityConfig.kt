@@ -20,10 +20,10 @@ class SecurityConfig {
             .hasRole("ADMIN")
             .pathMatchers("/hello")
             .permitAll()
+            .pathMatchers("/actuator/**")
+            .permitAll()
             .and()
             .formLogin()
-
-
 
         return http.build()
     }
