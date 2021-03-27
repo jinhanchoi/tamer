@@ -1,7 +1,7 @@
 package com.tamerofficial
 
 import com.tamerofficial.entity.MapData
-import com.tamerofficial.entity.Place
+import com.tamerofficial.domain.home.Place
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.reactive.asFlow
 import org.springframework.stereotype.Component
@@ -11,7 +11,8 @@ import reactor.core.publisher.Flux
 class HomeApplication{
 
     suspend fun listNearByMe() : Flow<Place> {
-        return Flux.fromIterable(listOf(Place(
+        return Flux.fromIterable(listOf(
+            Place(
             1,
             "test",
             "descTest",
@@ -19,7 +20,8 @@ class HomeApplication{
             MapData(1,1),
             emptyList(),
             emptyList()
-        ))).asFlow()
+        )
+        )).asFlow()
     }
 
 }

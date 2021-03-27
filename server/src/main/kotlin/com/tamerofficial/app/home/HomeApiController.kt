@@ -1,7 +1,7 @@
 package com.tamerofficial.app.home
 
 import com.tamerofficial.common.ResponseEntity
-import com.tamerofficial.entity.Place
+import com.tamerofficial.domain.home.Place
 import kotlinx.coroutines.reactive.awaitFirst
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping

@@ -1,4 +1,8 @@
-package com.tamerofficial.entity
+package com.tamerofficial.domain.home
+
+import com.tamerofficial.entity.Comment
+import com.tamerofficial.entity.MapData
+import com.tamerofficial.entity.Review
 
 data class Place(
     val placeId : Long,

@@ -1,6 +1,6 @@
 package com.tamerofficial
 
-import com.tamerofficial.entity.User
+import com.tamerofficial.entity.UserEntity
 import com.tamerofficial.entity.UserRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.reactive.asFlow
@@ -18,7 +18,7 @@ class HealthCheckController(private val userRepository: UserRepository) {
     }
 
     @GetMapping("/users")
-    suspend fun sample(): Flow<User> {
+    suspend fun sample(): Flow<UserEntity> {
         return userRepository.findAll().asFlow()
     }
 

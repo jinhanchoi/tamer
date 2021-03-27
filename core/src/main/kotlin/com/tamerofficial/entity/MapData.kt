@@ -1,5 +1,6 @@
 package com.tamerofficial.entity
 
-class MapData(val lat:Long, val lon : Long) {
-
-}
+data class MapData(
+    val lat:Long,
+    val lon : Long
+)

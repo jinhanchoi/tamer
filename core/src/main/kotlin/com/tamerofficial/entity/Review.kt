@@ -1,4 +1,6 @@
 package com.tamerofficial.entity
 
-class Review {
-}
+data class Review(
+    val title: String,
+    val content:String
+)
