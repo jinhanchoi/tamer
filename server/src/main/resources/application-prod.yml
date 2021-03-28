@@ -15,9 +15,6 @@ logging:
     org.springframework.data.r2dbc: DEBUG
 
 spring:
-  output:
-    ansi:
-      enabled: ALWAYS
   r2dbc:
     url: r2dbc:mysql://localhost:3306/tamer?useSSL=false&characterEncoding=utf8
     username: tamer

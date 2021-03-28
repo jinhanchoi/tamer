@@ -1,0 +1,49 @@
+2021-03-28 21:01:24,670 INFO org.springframework.boot.StartupInfoLogger [Test worker] Starting HomeControllerTest using Java 15.0.2 on Jinhanui-MacBookAir.local with PID 6519 (started by jinhanchoi in /Users/jinhanchoi/repo/tamer/server)
+2021-03-28 21:01:24,671 DEBUG org.springframework.boot.StartupInfoLogger [Test worker] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-28 21:01:24,672 INFO org.springframework.boot.SpringApplication [Test worker] No active profile set, falling back to default profiles: default
+2021-03-28 21:01:25,474 INFO org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration [Test worker] 
+
+Using generated security password: 02fcb216-af17-4958-9432-aa75f0cecc3f
+
+2021-03-28 21:01:25,645 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [Test worker] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-28 21:01:25,765 INFO org.springframework.boot.StartupInfoLogger [Test worker] Started HomeControllerTest in 1.28 seconds (JVM running for 3.307)
+2021-03-28 21:01:26,014 ERROR org.springframework.test.web.reactive.server.ExchangeResult [Test worker] Request details for assertion failure:
+
+> POST /home
+> WebTestClient-Request-Id: [1]
+> Content-Type: [application/json]
+> Content-Length: [34]
+
+{ 'location':{'lat': 1,'lon':,2} }
+
+< 400 BAD_REQUEST Bad Request
+< Content-Type: [application/json]
+< Content-Length: [130]
+< Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+< Pragma: [no-cache]
+< Expires: [0]
+< X-Content-Type-Options: [nosniff]
+< X-Frame-Options: [DENY]
+< X-XSS-Protection: [1 ; mode=block]
+< Referrer-Policy: [no-referrer]
+
+{"timestamp":"2021-03-28T12:01:25.989+00:00","path":"/home","status":400,"error":"Bad Request","message":"","requestId":"16a1606"}
+
+2021-03-28 21:01:43,199 INFO org.springframework.boot.StartupInfoLogger [Test worker] Starting HomeControllerTest using Java 15.0.2 on Jinhanui-MacBookAir.local with PID 6531 (started by jinhanchoi in /Users/jinhanchoi/repo/tamer/server)
+2021-03-28 21:01:43,200 DEBUG org.springframework.boot.StartupInfoLogger [Test worker] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-28 21:01:43,201 INFO org.springframework.boot.SpringApplication [Test worker] No active profile set, falling back to default profiles: default
+2021-03-28 21:01:43,967 INFO org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration [Test worker] 
+
+Using generated security password: 0c392190-e05c-4a27-8664-112804cbc829
+
+2021-03-28 21:01:44,141 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [Test worker] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-28 21:01:44,268 INFO org.springframework.boot.StartupInfoLogger [Test worker] Started HomeControllerTest in 1.274 seconds (JVM running for 3.428)
+2021-03-28 21:02:04,960 INFO org.springframework.boot.StartupInfoLogger [Test worker] Starting HomeControllerTest using Java 15.0.2 on Jinhanui-MacBookAir.local with PID 6542 (started by jinhanchoi in /Users/jinhanchoi/repo/tamer/server)
+2021-03-28 21:02:04,962 DEBUG org.springframework.boot.StartupInfoLogger [Test worker] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-28 21:02:04,964 INFO org.springframework.boot.SpringApplication [Test worker] No active profile set, falling back to default profiles: default
+2021-03-28 21:02:05,725 INFO org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration [Test worker] 
+
+Using generated security password: 7a0afd2a-4b34-47ab-b0e1-b181800bb490
+
+2021-03-28 21:02:05,885 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [Test worker] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-28 21:02:06,004 INFO org.springframework.boot.StartupInfoLogger [Test worker] Started HomeControllerTest in 1.234 seconds (JVM running for 3.039)

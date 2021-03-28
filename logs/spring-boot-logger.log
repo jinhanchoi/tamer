@@ -69,3 +69,71 @@ Using generated security password: 1ae580c4-1843-43af-b04a-cc8b62fe0490
 2021-03-28 14:35:53,525 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
 2021-03-28 14:35:53,661 INFO org.springframework.boot.web.embedded.netty.NettyWebServer [main] Netty started on port 8081
 2021-03-28 14:35:53,669 INFO org.springframework.boot.StartupInfoLogger [main] Started ServerApplicationKt in 1.347 seconds (JVM running for 1.597)
+2021-03-28 16:38:14,458 INFO org.springframework.boot.StartupInfoLogger [main] Starting ServerApplicationKt using Java 15.0.2 on Jinhanui-MacBookAir.local with PID 6158 (/Users/jinhanchoi/repo/tamer/server/build/classes/kotlin/main started by jinhanchoi in /Users/jinhanchoi/repo/tamer)
+2021-03-28 16:38:14,459 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-28 16:38:14,460 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: local
+2021-03-28 16:38:14,737 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2021-03-28 16:38:14,741 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 2 ms. Found 0 R2DBC repository interfaces.
+2021-03-28 16:38:14,837 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2021-03-28 16:38:14,909 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 71 ms. Found 1 R2DBC repository interfaces.
+2021-03-28 16:38:15,121 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'healthCheckController' defined in file [/Users/jinhanchoi/repo/tamer/server/build/classes/kotlin/main/com/tamerofficial/HealthCheckController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.tamerofficial.entity.UserRepository defined in @EnableR2dbcRepositories declared on R2dbcRepositoriesAutoConfigureRegistrar.EnableR2dbcRepositoriesConfiguration: Cannot resolve reference to bean 'r2dbcEntityTemplate' while setting bean property 'entityOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.data.r2dbc.R2dbcDataAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'r2dbcDatabaseClient' defined in class path resource [org/springframework/boot/autoconfigure/r2dbc/ConnectionFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'r2dbcDatabaseClient' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [org/springframework/boot/autoconfigure/r2dbc/ConnectionFactoryConfigurations$Pool.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [io.r2dbc.pool.ConnectionPool]: Factory method 'connectionFactory' threw exception; nested exception is org.springframework.boot.autoconfigure.r2dbc.ConnectionFactoryBuilder$ConnectionFactoryBeanCreationException: Failed to determine a suitable R2DBC Connection URL
+2021-03-28 16:38:15,133 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-28 16:38:15,143 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a ConnectionFactory: 'url' attribute is not specified and no embedded database could be configured.
+
+Reason: Failed to determine a suitable R2DBC Connection URL
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles local are currently active).
+
+2021-03-28 16:38:43,603 INFO org.springframework.boot.StartupInfoLogger [main] Starting ServerApplicationKt using Java 15.0.2 on Jinhanui-MacBookAir.local with PID 6163 (/Users/jinhanchoi/repo/tamer/server/build/classes/kotlin/main started by jinhanchoi in /Users/jinhanchoi/repo/tamer)
+2021-03-28 16:38:43,604 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-28 16:38:43,604 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: local
+2021-03-28 16:38:43,890 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2021-03-28 16:38:43,894 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 2 ms. Found 0 R2DBC repository interfaces.
+2021-03-28 16:38:44,004 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2021-03-28 16:38:44,076 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 72 ms. Found 1 R2DBC repository interfaces.
+2021-03-28 16:38:44,408 INFO org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 4c8c60ac-b0ee-4d46-9ce2-93f164823759
+
+2021-03-28 16:38:44,501 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-28 16:38:44,569 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-28 16:38:44,706 INFO org.springframework.boot.web.embedded.netty.NettyWebServer [main] Netty started on port 8081
+2021-03-28 16:38:44,713 INFO org.springframework.boot.StartupInfoLogger [main] Started ServerApplicationKt in 1.345 seconds (JVM running for 1.662)
+2021-03-28 16:39:11,546 INFO org.springframework.boot.StartupInfoLogger [main] Starting ServerApplicationKt using Java 15.0.2 on Jinhanui-MacBookAir.local with PID 6169 (/Users/jinhanchoi/repo/tamer/server/build/classes/kotlin/main started by jinhanchoi in /Users/jinhanchoi/repo/tamer)
+2021-03-28 16:39:11,547 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-28 16:39:11,547 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: local
+2021-03-28 16:39:11,869 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2021-03-28 16:39:11,873 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 2 ms. Found 0 R2DBC repository interfaces.
+2021-03-28 16:39:11,982 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2021-03-28 16:39:12,054 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 71 ms. Found 1 R2DBC repository interfaces.
+2021-03-28 16:39:12,439 INFO org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 3b616610-3ee1-4cd5-ba1e-6d6f79b522e4
+
+2021-03-28 16:39:12,541 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-28 16:39:12,638 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-28 16:39:12,822 INFO org.springframework.boot.web.embedded.netty.NettyWebServer [main] Netty started on port 8081
+2021-03-28 16:39:12,832 INFO org.springframework.boot.StartupInfoLogger [main] Started ServerApplicationKt in 1.517 seconds (JVM running for 1.756)
+2021-03-28 16:39:25,443 INFO com.tamerofficial.domain.home.HomeApp [reactor-http-nio-2] Location(lat=1, lon=2)
+2021-03-28 16:39:26,812 INFO com.tamerofficial.domain.home.HomeApp [reactor-http-nio-2] Location(lat=1, lon=2)
+2021-03-28 16:39:41,802 INFO com.tamerofficial.domain.home.HomeApp [reactor-http-nio-2] Location(lat=1, lon=2)
+2021-03-28 16:39:42,460 INFO com.tamerofficial.domain.home.HomeApp [reactor-http-nio-2] Location(lat=1, lon=2)
+2021-03-28 16:39:42,973 INFO com.tamerofficial.domain.home.HomeApp [reactor-http-nio-2] Location(lat=1, lon=2)
+2021-03-28 16:39:43,441 INFO com.tamerofficial.domain.home.HomeApp [reactor-http-nio-2] Location(lat=1, lon=2)
+2021-03-28 16:39:43,841 INFO com.tamerofficial.domain.home.HomeApp [reactor-http-nio-2] Location(lat=1, lon=2)
+2021-03-28 16:41:30,622 INFO com.tamerofficial.domain.home.HomeApp [reactor-http-nio-2] Location(lat=1, lon=2)

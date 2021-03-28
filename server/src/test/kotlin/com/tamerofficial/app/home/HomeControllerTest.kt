@@ -50,7 +50,7 @@ class HomeControllerTest : FunSpec(){
         val result = webClient.post()
             .uri("/home")
             .contentType(MediaType.APPLICATION_JSON)
-            .body(BodyInserters.fromValue("{ 'location':{'lat': 1,'lon':,2} }"))
+            .body(BodyInserters.fromValue("{\"lat\": 1,\"lon\":2}"))
             .exchange()
             .expectStatus().isOk
             .expectBody(object: ParameterizedTypeReference<ResponseEntity<List<NearByPlace>>>(){})
